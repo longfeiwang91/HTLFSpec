@@ -1,4 +1,6 @@
 use_frameworks!
+source 'https://gitee.com/hongtuedu/Spec.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
 
@@ -8,6 +10,8 @@ target 'HTLFSpec_Example' do
   target 'HTLFSpec_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+	pod 'HTETools'
+  	pod 'Masonry'
+    	pod 'FBSnapshotTestCase'
   end
 end
